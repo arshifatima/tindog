@@ -1,0 +1,176 @@
+#title{
+    background-color: #ff4c68;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    /* margin-bottom: 40px; */
+}
+.container-fluid{
+    padding:3% ;
+}
+body{
+    font-family: 'Montserrat-Light';
+    /* font-family: 'Playfair Display', serif; */
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 3.5rem;
+}
+
+h3{
+    font-family: "Montserrat-Bold";
+    font-size: 1.5rem;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+p{
+    color:#8f8f8f;
+}
+.row{
+    margin-left: 110px;
+    padding: 50px;
+}
+.btn{
+    margin-right: 20px;
+}
+/* navbar section */
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size:2.5rem;
+    font-weight:bold;
+}
+.navbar{
+    padding: 0 0 4.5rem;
+}
+/* changes the spacing between the three links */
+.nav-item{
+    padding:0 18px;
+}
+ /* changes the font-size of the 3 lists */
+ .nav-link{
+     font-size:1.2rem;
+     font-family: "Montserrat-Light";
+ }
+ /* download buttons */
+ .dwnld-btn{
+     margin: 5% 3% 5% 0;
+     
+ }
+ /* title image */
+ .title-img{
+     width:60%;
+     transform:rotate(25deg);
+     position: absolute;
+     right:30%;
+    
+ }
+
+  /* the thing to use media query is that on shrinking the screen-width to below 991 px the   
+  title image almost disappears and the user is not able to see the entire phone img
+  and we want our user to be able to see phone img when viewing on less width screen.
+  properly when switched to less width so in order to handle it media query used plus
+  on low width the text is left-align and we want to do it center aligned. */
+  
+
+  @media(max-width:991px){ 
+      /* it means below this width the below code or functionality gets activated. */
+      .title-img{
+          position:static;
+          transform: rotate(0);
+      }
+      #title{
+          text-align:center;
+      }
+  }
+
+
+ /* features section */
+ #features{
+     padding:7%;
+     background-color: #fff;
+     position: relative;
+     z-index: 1;
+ }
+ .feature-box{
+     text-align:center;
+     padding:5%;
+ }
+ .icon{
+     color:#ef8172;
+     margin-bottom: 1rem;
+ }
+ .icon:hover{
+     color:#ff4c68;
+ }
+  /* Testimonials Section */
+  #testimonials{
+      text-align: center;
+      background-color:#ef8172 ;
+      color:#fff;
+  }
+
+  .carousel-item{
+      padding:7% 15%;
+  }
+  .testimonial-image{
+      width:10%;
+      border-radius: 100%; 
+      /* inorder to make the square image rounded */
+      margin:20px;
+  }
+  /* <!-- Press --> */
+  #press{
+    background-color:#ef8172 ;
+    text-align:center;
+    padding-bottom: 3%;
+  }
+  .press-logo{
+      width:15%;
+      margin:15px 15px 20px;
+  }
+.signup{
+    text-align:center;
+    width:100%;
+    margin-top: 18px;
+}
+
+ /* pricing section */
+
+#pricing{
+    padding:100px;
+    text-align:center;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+
+ /* Call to Action Section */
+ #cta{
+     height: 460px;
+    background-color: #ff4c68;
+    color:#fff;
+    text-align:center;
+    line-height: 1.7;
+    padding-top:90px;
+    padding-right: 22%;
+    padding-left: 22%;
+    margin-bottom: 110px;
+
+ }
+ 
+ /* Footer Section */
+
+ .social-handle{
+     margin: 20px 10px; 
+     /* to give space between social media handles */
+ }
+
+ #footer{
+     text-align: center;
+     padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 100px;
+ }
